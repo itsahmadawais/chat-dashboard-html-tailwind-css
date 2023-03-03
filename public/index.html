@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="flex h-screen">
+      <aside class="w-2/12 border-r-[1px] h-full">
+        <!-- Logo -->
+        <div class="flex justify-between px-4 py-4">
+          <div class="flex items-center gap-4">
+            <img src="./assets/logo.svg" alt="" />
+            <p class="text-2xl font-satoshi font-bold">Messages</p>
+          </div>
+          <button>
+            <img src="./assets/more.svg" alt="" />
+          </button>
+        </div>
+        <!-- End Logo-->
+        <!-- Message Options -->
+        <div class="px-4 py-8 border-b-[1px]">
+          <div class="flex gap-4">
+            <img src="./assets/menu/inbox.svg" alt="" />
+            <p>My Inbox</p>
+          </div>
+          <ul class="mt-4">
+            <li class="mb-4">
+              <a href="#">
+                <div class="flex justify-between">
+                  <div class="flex gap-4">
+                    <img src="./assets/menu/all.svg" alt="" />
+                    <p>All</p>
+                  </div>
+                  <div class="bg-gray-50 px-2 py-1 rounded-full text-sm">
+                    12
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="#">
+                <div class="flex justify-between">
+                  <div class="flex gap-4">
+                    <img src="./assets/menu/drafts.svg" alt="" />
+                    <p>Drafts</p>
+                  </div>
+                  <div class="bg-gray-50 px-2 py-1 rounded-full text-sm">3</div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="#">
+                <div class="flex justify-between">
+                  <div class="flex gap-4">
+                    <img src="./assets/menu/sent.svg" alt="" />
+                    <p>Sent</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="#">
+                <div class="flex justify-between">
+                  <div class="flex gap-4">
+                    <img src="./assets/menu/statistic.svg" alt="" />
+                    <p>Statistic</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-4">
+              <a href="#">
+                <div class="flex justify-between">
+                  <div class="flex gap-4">
+                    <img src="./assets/menu/archive.svg" alt="" />
+                    <p>Archive</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Teams -->
+        <div class="px-4 py-2">
+          <h2 class="font-bold">Teams</h2>
+          <ul>
+            <li class="mb-1">
+              <a>
+                <div class="flex justify-between gap-2">
+                  <div class="flex items-center gap-1">
+                    <div
+                      class="w-4 h-4 border-[2px] border-red-500 rounded-[4px]"
+                    ></div>
+                    <div class="">Marketing</div>
+                  </div>
+                  <div class="bg-gray-50 px-2 py-1 rounded-full text-sm">
+                    12
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a>
+                <div class="flex justify-between gap-2">
+                  <div class="flex items-center gap-1">
+                    <div
+                      class="w-4 h-4 border-[2px] border-blue-500 rounded-[4px]"
+                    ></div>
+                    <div class="">HR Team</div>
+                  </div>
+                  <div class="bg-gray-50 px-2 py-1 rounded-full text-sm">
+                    12
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a>
+                <div class="flex justify-between gap-2">
+                  <div class="flex items-center gap-1">
+                    <div
+                      class="w-4 h-4 border-[2px] border-blue-400 rounded-[4px]"
+                    ></div>
+                    <div class="">Sales</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a>
+                <div class="flex justify-between gap-2">
+                  <div class="flex items-center gap-1">
+                    <div
+                      class="w-4 h-4 border-[2px] border-yellow-400 rounded-[4px]"
+                    ></div>
+                    <div class="">Customer onboarding</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="mb-1">
+              <a>
+                <div class="flex justify-between gap-2">
+                  <div class="flex items-center gap-1">
+                    <div
+                      class="w-4 h-4 border-[2px] border-pink-400 rounded-[4px]"
+                    ></div>
+                    <div class="">UX</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="text-gray-300">Show all teams</a>
+        </div>
+        <!-- End Teams -->
+        <!-- Message Options-->
+      </aside>
+      <main class="w-10/12">
+        <div class="flex">
+          <aside class="w-5/12 border-r-[1px]">
+            <!-- Search Box -->
+            <div class="flex gap-2 py-4 px-2">
+              <button class="w-1/12">
+                <img src="./assets/back.svg" alt="" />
+              </button>
+              <div class="relative w-11/12">
+                <input
+                  type="text"
+                  placeholder="Search for conversation..."
+                  class="rounded-[10px] py-1 px-2 w-full"
+                />
+                <img
+                  src="./assets/search.svg"
+                  class="absolute top-2 right-2 w-4 h-4"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- End Search Box -->
+            <div class="px-4">
+              <div class="flex justify-between my-4">
+                <div class="flex gap-1">
+                  4
+                  <select class="">
+                    <option>New</option>
+                    <option>Old</option>
+                  </select>
+                </div>
+                <div class="">
+                  <select class="">
+                    <option>Newest</option>
+                  </select>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <a>
+                    <div
+                      class="flex gap-2 items-center justify-between bg-blue-200 p-2 rounded-[10px]"
+                    >
+                      <img
+                        src="./assets/users/avatar2.png"
+                        class="w-11 rounded-full"
+                        alt=""
+                      />
+                      <div class="w-full">
+                        <h2 class="font-bold">Marc Smith</h2>
+                        <p class="text-sm">thank you for helping me!</p>
+                      </div>
+                      <div class="text-center w-20">
+                        <img
+                          src="./assets/tag-red.svg"
+                          class="mx-auto"
+                          alt=""
+                        />
+                        <span class="text-sm">11:30</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          <div class="w-6/12">
+            <div
+              class="flex items-center justify-between border-b-[1px] px-4 py-4 h-16"
+            >
+              <div class="flex gap-2 items-center">
+                <img src="./assets/users/avatar2.png" class="w-11" alt="" />
+                <span class="font-bold">Marc Smith</span>
+              </div>
+              <div class="flex gap-2">
+                <button class="bg-cgray-100 px-4 py-2 rounded-[15px]">
+                  <div class="flex gap-2">
+                    <span>Remind me</span>
+                    <img src="./assets/alarm-clock.svg" alt="" />
+                  </div>
+                </button>
+                <button class="bg-cpink-100 px-4 py-2 rounded-[15px]">
+                  <img src="./assets/tag-red.svg" alt="" />
+                </button>
+                <button class="bg-cgray-100 px-4 py-2 rounded-[15px]">
+                  <img src="./assets/alarm-clock.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col w-full">
+              <div class="h-[70vh] w-full px-4 py-4">
+                <div class="ml-10">
+                  <div class="shadow bg-white rounded-[10px] px-2 py-2">
+                    <div class="flex items-baseline">
+                      <div class="w-full text-sm">
+                        Lorem Ipsum dolor sit amet, consectetur adipiscing elit.
+                        Dui lobortis id at nullam libero dignissim. Netus
+                        feugiat dolor pulvinar eu viverra. Id cursus vitae et
+                        nisi vitae blandit eu et.
+                      </div>
+                      <img
+                        src="./assets/check.svg"
+                        class="w-4 mt-auto"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-end gap-1 my-2">
+                    <span class="text-sm">03:00 PM</span>
+                    <span class="text-sm font-bold">Maya Smith</span>
+                    <img src="./assets/users/avatar1.png" class="w-8" alt="" />
+                  </div>
+                </div>
+                <div class="mr-10">
+                  <div class="shadow bg-white rounded-[10px] px-2 py-2">
+                    <div class="flex items-baseline">
+                      <div class="w-full text-sm">
+                        Lorem Ipsum dolor sit amet, consectetur adipiscing elit.
+                        Dui lobortis id at nullam libero dignissim. Netus
+                        feugiat dolor pulvinar eu viverra. Id cursus vitae et
+                        nisi vitae blandit eu et.
+                      </div>
+                      <img
+                        src="./assets/check.svg"
+                        class="w-4 mt-auto"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-start gap-1 my-2">
+                    <img src="./assets/users/avatar1.png" class="w-8" alt="" />
+                    <span class="text-sm font-bold">Maya Smith</span>
+                    <span class="text-sm">03:00 PM</span>
+                  </div>
+                </div>
+                <div class="mr-10">
+                  <div class="shadow w-fit bg-white rounded-[10px] px-2 py-2">
+                    <div class="flex items-baseline">
+                      <div class="w-full text-sm">Lorem Ipsum dolor</div>
+                      <img
+                        src="./assets/check.svg"
+                        class="w-4 mt-auto"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-start gap-1 my-2">
+                    <img src="./assets/users/avatar1.png" class="w-8" alt="" />
+                    <span class="text-sm font-bold">Maya Smith</span>
+                    <span class="text-sm">03:00 PM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="min-h-[19vh] w-full px-2">
+                <div class="bg-white shadow h-full py-2 px-2 rounded-[10px]">
+                  <div class="flex justify-between">
+                    <div class="">
+                      <select class="">
+                        <option>Reply</option>
+                      </select>
+                    </div>
+                    <div class="">
+                      <p>Use CTRL + K for shortcut</p>
+                    </div>
+                  </div>
+                  <div class="px-1 py-2">
+                    <textarea
+                      class="w-full focus:border-0 active:border-0"
+                      placeholder="We will check and get the answer for you|"
+                    ></textarea>
+                  </div>
+                  <div class="px-1 py-2">
+                    <div class="flex justify-between">
+                      <div class=""></div>
+                      <div class="">
+                        <button
+                          class="px-4 py-2 text-sm bg-blue-500 rounded-[10px] text-white"
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="w-4/12 border-l-[1px] h-full">
+            <div class="border-b-[1px] px-4 py-4 h-16">
+              <h2 class="text-2xl font-bold">User Info</h2>
+            </div>
+            <!-- Contact Details -->
+            <div class="mx-4 border-[1px] rounded-[10px] my-4">
+              <div class="px-2 py-2">
+                <div class="flex gap-2">
+                  <div class="">
+                    <span>Assignee</span>
+                  </div>
+                  <div class="">
+                    <img src="" />
+                  </div>
+                  <div class="">
+                    <p>Amanda Brown</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Contact Details -->
+            <!-- Custom Contact Properties -->
+            <div class="mx-4 border-[1px] rounded-[10px] my-4">
+              <div class="border-b-[1px] py-2 px-2">
+                <h2 class="text-lg font-bold">Custom contact properties</h2>
+              </div>
+              <div class="px-2 py-2">
+                <p>Not available.</p>
+                <a href="#" class="text-sm text-blue-400 underline my-4"
+                  >Edit</a
+                >
+              </div>
+            </div>
+            <!-- End Custom Contact Properties -->
+            <!-- Support Desk -->
+            <div class="mx-4 border-[1px] rounded-[10px] my-4">
+              <div class="border-b-[1px] py-2 px-2">
+                <h2 class="text-lg font-bold">Support Desk</h2>
+              </div>
+              <div class="px-2 py-2">
+                <p>
+                  Don't ask your customers to repeat. Sync email conversations
+                  inside the inbox.
+                </p>
+                <a href="#" class="text-sm text-blue-400 underline my-4"
+                  >Configure</a
+                >
+              </div>
+            </div>
+            <!-- End Support Desk -->
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
