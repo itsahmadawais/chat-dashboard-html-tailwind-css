@@ -1,5 +1,6 @@
 This is a simple chat dashboard created using HTML and Tailwind CSS.
-![enter image description here](https://github.com/itsahmadawais/chat-dashboard-html-tailwind-css/dsahboard.png)
+
+![Chat Dashboard](https://github.com/itsahmadawais/chat-dashboard-html-tailwind-css/blob/main/dashboard.png)
 
 ## Getting Started
 
